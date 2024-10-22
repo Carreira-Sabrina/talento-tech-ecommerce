@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Tech Store</title>
+
+    <!--CDN FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div class="contenedor-principal">
+
+
+        <header>
+            <div class="logo">
+                <h3>Talento Tech Shop <span><i class="fa-solid fa-gift"></i></span></h3>
+            </div>
+            
+            <!-- IGUAL ESTE NAV VA A SER REEMPLAZADO POR VERSION BOOTSTRAP-->
+
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#seccion-productos">Productos</a></li>
+                    <li><a href="html/acerca-de.html">Acerca de</a></li>
+                    <li><a href="html/contacto.html">Contacto</a></li>
+                </ul>
+            </nav> <!-- fin nav-->
+
+            <!--ACA VA EL ICONO DEL CARRITO ETC-->
+            <div class="contenedor-carrito">
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+                <span class="numero-carrito" id="numero-carrito">10</span>
+            </div> <!-- fin div carrito-->
+
+        </header> <!-- fin header-->
+    
+        <section class="hero">
+            <div class="hero-contenido">
+                <h1>Disfrutá comprar desde tu casa</h1>
+
+                <a href="#" class="cta-btn">Enterate más</a>
+            </div>
+
+        </section> <!-- fin hero-->
+
+
+
+
+        <main>
+            <section id="seccion-productos">
+                <h2>Nuestros productos</h2>
+
+                <div class="contenedor-select">
+                    <label for="selector-categorias">Filtrar por categoría:</label>
+                
+                    <select name="selector-categorias" id="selector-categorias">
+                        <!-- Las opciones de este elemento se cargan dinamicamente-->
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="otro">Mamá Cangreja lalalalala</option>
+                    </select>
+
+                </div> <!--fin contenedor select-->
+
+                
+
+                <div class="contenedor-productos" id="contenedor-productos">
+                    
+                    <!--LOS PRODUCTOS SE CARGAN DINAMICAMENTE-->
+                    <!--SE AGREGAN ALGUNOS PRODUCTOS A MANO PARA PROBAR COMO SALE-->
+
+                    <!--UN PRODUCTO AGREGADO A MANO-->
+                    <article class="tarjeta-producto">
+
+                        <div class="tarjeta-producto-imagen">
+                            <img src="./assets/img/dummy/anillo.jpg" alt="Anillo">
+                        </div>
+
+                        <div class="tarjeta-producto-info">
+                            <h3>Anillo con piedra</h3>
+                            <p>Brilla un monton Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta quisquam itaque voluptatum iste tempore qui delectus quas impedit laborum necessitatibus id dolore facere a quo vel, molestias quam perspiciatis.</p>
+                            <p class="tarjeta-producto-precio">$1500</p>
+                            <button  class="tarjeta-producto-agregar" id="1">Agregar al carrito</button>
+                            
+                        </div>
+
+                    </article> <!-- fin del producto agregado a mano-->
+
+
+                    <!--UN PRODUCTO AGREGADO A MANO-->
+                    <article class="tarjeta-producto">
+
+                        <div class="tarjeta-producto-imagen">
+                            <img src=./assets/img/dummy/disco.jpg" alt="Disco">
+                        </div>
+
+                        <div class="tarjeta-producto-info">
+                            <h3>Disco de estado solido</h3>
+                            <p>Nunca son suficientes Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aut sunt eos suscipit? Ut, doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta quisquam itaque voluptatum iste tempore qui delectus quas impedit laborum necessitatibus id dolore facere a quo vel, molestias quam perspiciatis.</p>
+                            <p>$250</p>
+                            <button  class="tarjeta-producto-agregar" id="">Agregar al carrito</button>
+                            
+                        </div>
+
+                    </article> <!-- fin del producto agregado a mano-->
+
+                    <!--UN PRODUCTO AGREGADO A MANO-->
+                    <article class="tarjeta-producto">
+
+                        <div class="tarjeta-producto-imagen">
+                            <img src="./assets/img/dummy/mochila.jpg" alt="Mochila">
+                        </div>
+
+                        <div class="tarjeta-producto-info">
+                            <h3>Mochila</h3>
+                            <p>Le hice una parecida a mi hermano Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta quisquam itaque voluptatum iste tempore qui delectus quas impedit laborum necessitatibus id dolore facere a quo vel, molestias quam perspiciatis.</p>
+                            <p>$120</p>
+                            <button  class="tarjeta-producto-agregar" id="3">Agregar al carrito</button>
+                            
+                        </div>
+
+                    </article> <!-- fin del producto agregado a mano-->
+
+
+                    <!--UN PRODUCTO AGREGADO A MANO-->
+                    <article class="tarjeta-producto">
+
+                        <div class="tarjeta-producto-imagen">
+                            <img src="./assets/img/dummy/monitor.jpg" alt="Monitor">
+                        </div>
+
+                        <div class="tarjeta-producto-info">
+                            <h3>Monitor Gamer</h3>
+                            <p>Para que le veas todos los polígonos al caballo de Skyrim Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil fuga suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta quisquam itaque voluptatum iste tempore qui delectus quas impedit laborum necessitatibus id dolore facere a quo vel, molestias quam perspiciatis.</p>
+                            <p>$650</p>
+                            <button  class="tarjeta-producto-agregar" id="">Agregar al carrito</button>
+                            
+                        </div>
+
+                    </article> <!-- fin del producto agregado a mano-->
+                    
+
+                </div> <!--fin contenedor productos-->
+    
+    
+            </section> <!-- fin seccion productos-->
+    
+        </main> <!-- fin main-->
+
+        <footer id="footer">
+            <div class="logo">
+                <h3>Talento Tech Shop <span><i class="fa-solid fa-gift"></i></span></h3>
+            </div>
+
+            <div class="footer-contenido">
+                <p>Seguinos en nuestras redes sociales:</p>
+
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="https://x.com/?lang=es"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=es"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://ar.pinterest.com/"><i class="fa-brands fa-square-pinterest"></i></a></li>
+                </ul>
+            </div>
+    
+        </footer> <!-- fin footer-->
+
+    </div> <!-- fin contenedor principal-->
+
+</body>
+</html>

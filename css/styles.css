@@ -1,0 +1,542 @@
+/* FUENTES */
+/*========================================*/
+    /* PARA TITULOS ETC */
+/*Merriweather Sans"*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+    /* REGULAR */
+/*Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* VARIABLES*/
+/*========================================*/
+:root{
+    /*FUENTES*/
+    --ff-destaque: "Merriweather Sans", sans-serif;
+    --ff-regular: "Lato", sans-serif;
+    /* COLORES */
+    --color-turquoise-blue: #70D1E1;
+    --color-verdigris: #00AFB5;
+    --color-bittersweet: #F56960;
+    --color-baby-powder: #FFFCF9;
+    --color-rose: #FF0080;
+    --color-onyx: #3C3C3C;
+    --color-night: #0C0F0A;
+    --color-eerie-black: #1B1B1E;
+
+    /*Medidas*/
+    --header-height:110px;
+
+    }
+    
+    
+/* RESET */
+/*========================================*/
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+
+body{
+    font-family: var(--ff-regular);
+}
+
+h1{
+    font-family: var(--ff-destaque);
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* CLASES DE UTILIDAD*/
+/*========================================*/
+.contenedor-principal{
+    max-width: 1320px;
+    margin: 0 auto;
+
+    /*debug*/
+    border: 1px solid goldenrod;
+}
+
+.cta-btn{
+    background-color: var(--color-rose);
+    color: var(--color-baby-powder);
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-family: var(--ff-regular);
+}
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+
+/* HEADER / NAV
+/*========================================*/
+
+header{
+    height: var(--header-height);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    background-color: var(--color-eerie-black);
+    color: var(--color-baby-powder);
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--ff-regular);
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+
+.logo{
+    font-family: var(--ff-destaque);
+    font-size: 1.6rem;
+}
+
+
+/*Icono de carrito y cantidad de items */
+
+.contenedor-carrito{
+    position: relative;
+    padding: 1.25rem;
+
+    /*debug**/
+    border: 1px solid blue;
+    
+}
+
+.contenedor-carrito i{
+    font-size: 1.75rem;
+
+}
+
+.numero-carrito{
+    position: absolute;
+    top: -6px;
+    right: 0px;
+    font-size: 1.5rem;
+
+
+    
+    color: #F56960;
+}
+
+
+/* HERO
+/*========================================*/
+.hero{
+    /*debug*/
+    width:100%;
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    /* Primero va el gradiente y despues la foto ! 🦜 */
+    background-image: linear-gradient(135deg, rgba(254,252,252,0.1) 0%, rgba(255,0,128,0.4) 100%), url("../assets/img/hero-1.jpg");
+    background-position: center left;
+    /*Como que le falta padding 🦜*/
+    padding: 1.25rem;
+}
+
+
+/* Esto  me gusta màs que el asunto del flex-basis, pero que serà mejor pràctica? */
+.hero-contenido{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* SECCION PRODUCTOS
+/*========================================*/
+
+
+#seccion-productos{
+    padding: 0.75rem;
+}
+
+#seccion-productos h2{
+    text-align: center;
+    margin: 2.5rem 0;
+    font-family: var(--ff-destaque);
+    font-size: 2.75rem;
+    padding: 1rem;
+
+    position: relative;
+}
+
+/*Ponele que esto se puede usar para una animacion si se le pone un poco de cariño*/
+#seccion-productos h2::after{
+    content: "";
+    height: 4px;
+    width: 10%;
+    background-color: #0C0F0A;
+    position: absolute;
+    bottom: 1px;
+    left:50%;
+    /*transform: translateX(-50%);*/
+    transform: translateX(-50%);
+}
+
+
+
+.contenedor-select{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#seccion-productos select{
+    font-size: 1.75rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-rose);
+}
+
+#seccion-productos label{
+    font-size: 1.75rem;
+    margin-right: 1rem;
+}
+
+
+
+.contenedor-productos{
+    margin-top: 1.75rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+
+    /*debug*/
+    border: 1px solid plum;
+}
+
+
+/* SECCION PRODUCTOS - TARJETA PRODUCTO */
+/*========================================*/
+
+.tarjeta-producto{
+    /*experimental*/
+    display: flex;
+    flex-direction: column;
+
+
+    padding: 1rem;
+
+    border-radius: 1.75rem;
+
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.tarjeta-producto-imagen img{
+    display: block;
+    width: 100%;
+
+    /*experimental*/
+    border-radius: 0.5rem;
+}
+
+.tarjeta-producto-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /*experimental*/
+    flex-grow: 1;
+}
+
+.tarjeta-producto-info h3{
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+
+    font-size: 1.25rem;
+    
+}
+
+.tarjeta-producto-info p{
+    margin-bottom: 1.5rem;
+}
+
+.tarjeta-producto-precio{
+    font-weight: bold;
+}
+
+.tarjeta-producto-agregar{
+    background-color: var(--color-rose);
+    color: var(--color-baby-powder);
+    padding: 12px 24px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+    
+}
+
+
+
+/* FOOTER */
+/*========================================*/
+
+#footer{
+    background-color: var(--color-eerie-black);
+    color: var(--color-baby-powder);
+
+    padding: 1.5rem;
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contenido ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-contenido li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.footer-contenido i{
+    font-size: 2rem;
+}
+
+
+/*ESTO VUELA */
+
+#footer p{
+    text-align: center;
+    margin-bottom: 1.75rem;
+}
+
+#footer p a{
+    text-shadow: 3px 2px 2px rgba(255,0,128,0.5);
+}
+
+
+
+/* ESTILOS DE ACERCA DE 
+/*========================================*/
+.hero-video-contenedor{
+    position: relative;
+}
+
+#video-hero {
+    width: 100%;
+}
+
+.hero-video-overlay{
+    background-color: rgba(50, 50, 50, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+
+
+
+/* 
+/*========================================*/
+
+
+
+
+
+
+
+
+
+/* PAGINA DE CONTACTO
+/*========================================*/
+
+.titulo-contacto{
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.contenedor-contacto{
+    /*QUE DESASTRE ESTO POR DIOS 🦜🦜🦜🦜🦜🦜🦜🦜🦜👻*/
+    /*max-height: calc(80vh - var(--header-height));*/
+
+    display: flex;
+
+    border-radius: 1rem;
+
+    overflow: hidden;
+    padding: 1.25rem;
+
+    
+
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.contenedor-contacto-izquierda{
+    padding: 0.75rem;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    
+}
+
+
+
+.contenedor-contacto-derecha{
+    flex-basis: 50%;
+}
+
+.contenedor-contacto-derecha img{
+    display: block;
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.campo-formulario{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.campo-formulario label{
+    justify-self: flex-start;
+}
+
+.campo-formulario input,textarea{
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid salmon;
+    justify-self: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+/*            MEDIA QUERIES               */
+/*========================================*/
+/*========================================*/
+
+
+/*ESTA MEDIA QUERIE ES PROVISORIA PORQUE LA NAV PASA A SER EN BOOTSTRAP*/
+
+@media screen and (max-width: 992px){
+    nav{
+        display: none;
+    }
+}
+
+/*******************************************************/
+
+/* Celulares pequeños < 576 px */
+@media screen and (max-width: 576px){
+
+    /*Ignoro el logo del nav por ahora ... despues viene Bootstrap */
+
+    .hero{
+        background-image: linear-gradient(135deg, rgba(254,252,252,0.1) 0%, rgba(255,0,128,0.4) 100%), url("../assets/img/hero-sm.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+    }
+
+    .hero-contenido{
+        max-width: 95%;
+    }
+
+
+
+    .hero-contenido h1{
+        font-size: 3.75rem;
+        text-shadow: 4px 4px 2px rgba(255,255,255,0.6);
+    }
+
+
+    /*SECCION PRODUCTOS*/
+
+    .contenedor-select{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #seccion-productos select{
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        margin-top: 1.25rem;
+    }
+
+    .contenedor-productos{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+
+    .hero{
+        justify-content: center;
+    }
+    .hero-contenido{
+        max-width: 80%;
+    }
+
+    .contenedor-productos{
+        grid-template-columns: repeat(2,1fr)
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+
+
+    .contenedor-productos{
+        grid-template-columns: repeat(3,1fr)
+    }
+}
