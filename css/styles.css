@@ -1,85 +1,4 @@
-/* FUENTES */
-/*========================================*/
-    /* PARA TITULOS ETC */
-/*Merriweather Sans"*/
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-    /* REGULAR */
-/*Lato*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-/* VARIABLES*/
-/*========================================*/
-:root{
-    /*FUENTES*/
-    --ff-destaque: "Merriweather Sans", sans-serif;
-    --ff-regular: "Lato", sans-serif;
-    /* COLORES */
-    --color-turquoise-blue: #70D1E1;
-    --color-verdigris: #00AFB5;
-    --color-bittersweet: #F56960;
-    --color-baby-powder: #FFFCF9;
-    --color-rose: #FF0080;
-    --color-onyx: #3C3C3C;
-    --color-night: #0C0F0A;
-    --color-eerie-black: #1B1B1E;
-
-    /*Medidas*/
-    --header-height:110px;
-
-    }
-    
-    
-/* RESET */
-/*========================================*/
-*{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-}
-
-
-body{
-    font-family: var(--ff-regular);
-}
-
-h1{
-    font-family: var(--ff-destaque);
-    font-weight: 800;
-    font-size: 4rem;
-    margin-bottom: 4rem;
-}
-
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-ul{
-    list-style: none;
-}
-
-
-/* CLASES DE UTILIDAD*/
-/*========================================*/
-.contenedor-principal{
-    max-width: 1320px;
-    margin: 0 auto;
-
-    /*debug*/
-    border: 1px solid goldenrod;
-}
-
-.cta-btn{
-    background-color: var(--color-rose);
-    color: var(--color-baby-powder);
-    font-size: 1.5rem;
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 12px;
-    font-family: var(--ff-regular);
-}
 
 
 /* _____________________________________________________________________________________________________________________________________ */
@@ -142,8 +61,6 @@ nav ul li{
     top: -6px;
     right: 0px;
     font-size: 1.5rem;
-
-
     
     color: #F56960;
 }
@@ -159,12 +76,10 @@ nav ul li{
     /* Primero va el gradiente y despues la foto ! 🦜 */
     background-image: linear-gradient(135deg, rgba(254,252,252,0.1) 0%, rgba(255,0,128,0.4) 100%), url("../assets/img/hero-1.jpg");
     background-position: center left;
-    /*Como que le falta padding 🦜*/
     padding: 1.25rem;
 }
 
 
-/* Esto  me gusta màs que el asunto del flex-basis, pero que serà mejor pràctica? */
 .hero-contenido{
     max-width: 50%;
     display: flex;
@@ -369,6 +284,16 @@ nav ul li{
     bottom: 0px;
 }
 
+.ubicacion h2{
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+.ubicacion-contenedor-mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -477,6 +402,11 @@ nav ul li{
 
     /*Ignoro el logo del nav por ahora ... despues viene Bootstrap */
 
+
+    h1{
+        font-size: 3rem;
+    }
+
     .hero{
         background-image: linear-gradient(135deg, rgba(254,252,252,0.1) 0%, rgba(255,0,128,0.4) 100%), url("../assets/img/hero-sm.jpg");
         background-repeat: no-repeat;
@@ -516,7 +446,18 @@ nav ul li{
         grid-template-columns: 1fr;
     }
 
+
+    /*ACERCA DE */
+    /*===============*/
+
+    /* Iframe con mapa */
+    #iframe-mapa{
+        width:90%;
+    }
+
 }
+
+
 
 @media screen and (min-width: 577px) and (max-width: 768px){
 
