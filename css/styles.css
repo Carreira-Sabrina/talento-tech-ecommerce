@@ -66,47 +66,6 @@ nav ul li{
 }
 
 
-/* HERO
-/*========================================*/
-.hero{
-    /*debug*/
-    width:100%;
-    height: calc(100vh - var(--header-height));
-    display: flex;
-    /* Primero va el gradiente y despues la foto ! 🦜 */
-    background-image: linear-gradient(135deg, rgba(254,252,252,0.1) 0%, rgba(255,0,128,0.4) 100%), url("../assets/img/hero-1.jpg");
-    background-position: center left;
-    padding: 1.25rem;
-}
-
-
-.hero-contenido{
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-/* SECCION PRODUCTOS
-/*========================================*/
-
-
-#seccion-productos{
-    padding: 0.75rem;
-}
-
-#seccion-productos h2{
-    text-align: center;
-    margin: 2.5rem 0;
-    font-family: var(--ff-destaque);
-    font-size: 2.75rem;
-    padding: 1rem;
-
-    position: relative;
-}
 
 /*Ponele que esto se puede usar para una animacion si se le pone un poco de cariño*/
 #seccion-productos h2::after{
@@ -123,171 +82,19 @@ nav ul li{
 
 
 
-.contenedor-select{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-#seccion-productos select{
-    font-size: 1.75rem;
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-    border: 2px solid var(--color-rose);
-}
-
-#seccion-productos label{
-    font-size: 1.75rem;
-    margin-right: 1rem;
-}
 
 
 
-.contenedor-productos{
-    margin-top: 1.75rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.75rem;
-
-    /*debug*/
-    border: 1px solid plum;
-}
-
-
-/* SECCION PRODUCTOS - TARJETA PRODUCTO */
-/*========================================*/
-
-.tarjeta-producto{
-    /*experimental*/
-    display: flex;
-    flex-direction: column;
-
-
-    padding: 1rem;
-
-    border-radius: 1.75rem;
-
-
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.tarjeta-producto-imagen img{
-    display: block;
-    width: 100%;
-
-    /*experimental*/
-    border-radius: 0.5rem;
-}
-
-.tarjeta-producto-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    /*experimental*/
-    flex-grow: 1;
-}
-
-.tarjeta-producto-info h3{
-    margin-top: 1rem;
-    margin-bottom: 1.25rem;
-
-    font-size: 1.25rem;
-    
-}
-
-.tarjeta-producto-info p{
-    margin-bottom: 1.5rem;
-}
-
-.tarjeta-producto-precio{
-    font-weight: bold;
-}
-
-.tarjeta-producto-agregar{
-    background-color: var(--color-rose);
-    color: var(--color-baby-powder);
-    padding: 12px 24px;
-    font-size: 1.125rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 12px;
-    
-}
 
 
 
-/* FOOTER */
-/*========================================*/
 
-#footer{
-    background-color: var(--color-eerie-black);
-    color: var(--color-baby-powder);
-
-    padding: 1.5rem;
-    font-size: 1.5rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.footer-contenido{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-contenido ul{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.footer-contenido li{
-    display: inline-block;
-    margin-right: 1rem;
-}
-
-.footer-contenido i{
-    font-size: 2rem;
-}
-
-
-/*ESTO VUELA */
-
-#footer p{
-    text-align: center;
-    margin-bottom: 1.75rem;
-}
-
-#footer p a{
-    text-shadow: 3px 2px 2px rgba(255,0,128,0.5);
-}
 
 
 
 /* ESTILOS DE ACERCA DE 
 /*========================================*/
-.hero-video-contenedor{
-    position: relative;
-}
 
-#video-hero {
-    width: 100%;
-}
-
-.hero-video-overlay{
-    background-color: rgba(50, 50, 50, 0.3);
-    position: absolute;
-    width: 100%;
-    height: 25%;
-    right: 0px;
-    bottom: 0px;
-}
-
-.ubicacion h2{
-    text-align: center;
-    margin: 1.5rem auto;
-}
 
 .ubicacion-contenedor-mapa{
     display: flex;
@@ -402,51 +209,6 @@ nav ul li{
 
     /*Ignoro el logo del nav por ahora ... despues viene Bootstrap */
 
-
-    h1{
-        font-size: 3rem;
-    }
-
-    .hero{
-        background-image: linear-gradient(135deg, rgba(254,252,252,0.1) 0%, rgba(255,0,128,0.4) 100%), url("../assets/img/hero-sm.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        justify-content: center;
-    }
-
-    .hero-contenido{
-        max-width: 95%;
-    }
-
-
-
-    .hero-contenido h1{
-        font-size: 3.75rem;
-        text-shadow: 4px 4px 2px rgba(255,255,255,0.6);
-    }
-
-
-    /*SECCION PRODUCTOS*/
-
-    .contenedor-select{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #seccion-productos select{
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-        margin-top: 1.25rem;
-    }
-
-    .contenedor-productos{
-        grid-template-columns: 1fr;
-    }
-
-
     /*ACERCA DE */
     /*===============*/
 
@@ -458,26 +220,3 @@ nav ul li{
 }
 
 
-
-@media screen and (min-width: 577px) and (max-width: 768px){
-
-    .hero{
-        justify-content: center;
-    }
-    .hero-contenido{
-        max-width: 80%;
-    }
-
-    .contenedor-productos{
-        grid-template-columns: repeat(2,1fr)
-    }
-}
-
-
-@media screen and (min-width: 769px) and (max-width: 992px){
-
-
-    .contenedor-productos{
-        grid-template-columns: repeat(3,1fr)
-    }
-}
