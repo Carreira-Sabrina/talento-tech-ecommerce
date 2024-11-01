@@ -1,0 +1,54 @@
+header{
+    height: var(--header-height);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    background-color: var(--color-eerie-black);
+    color: var(--color-baby-powder);
+}
+
+
+/* Reescribiendo estilos de Bootstrap que no me sirven */
+
+nav{
+    background-color: var(--color-eerie-black);
+}
+
+
+.navbar-brand,.nav-link{
+    color: var(--color-baby-powder);
+}
+
+.icono-logo{
+    margin-left: 0.5rem;
+}
+
+.active{
+    /*No me gusta usar !important pero no habia mas remedio... */
+    color: var(--color-rose) !important;
+}
+
+
+/*El icono del carrito*/
+.contenedor-carrito{
+    position: relative;
+    padding: 1.25rem;    
+}
+
+.contenedor-carrito i{
+    font-size: 1.75rem;
+
+}
+
+.numero-carrito{
+    position: absolute;
+    top: -6px;
+    right: 0px;
+    font-size: 1.25rem;
+    
+    color: var(--color-rose);
+}
+
