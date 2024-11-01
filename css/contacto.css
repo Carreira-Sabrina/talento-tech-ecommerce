@@ -1,4 +1,3 @@
-
 /*Estilos de contacto.html*/
 
 .seccion-contacto{
@@ -54,6 +53,22 @@
 }
 
 
+/*Estilos de la seccion que tiene el iframe con el mapa*/
+
+#ubicacion h2{
+    text-align: center;
+    margin: 1.25rem 0;
+}
+
+
+.ubicacion-contenedor-mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px){
@@ -64,5 +79,10 @@
 
     .campo-formulario{
         flex-direction: column;
+    }
+
+     /*Iframe con mapa*/
+     #iframe-mapa{
+        width:90%;
     }
 }

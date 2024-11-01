@@ -78,12 +78,6 @@ h2{
 }
 
 
-/* Estilos del mapa en el iframe*/
-.ubicacion-contenedor-mapa{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 
