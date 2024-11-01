@@ -1,5 +1,6 @@
 header{
-    height: var(--header-height);
+    /*Si le pongo altura al header el nav de Bootstrap explota como el Volcan Krakatoa */
+    /*height: var(--header-height);*/
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -12,6 +13,7 @@ header{
 
 
 /* Reescribiendo estilos de Bootstrap que no me sirven */
+/* ______________________________________________________ */
 
 nav{
     background-color: var(--color-eerie-black);
@@ -20,7 +22,9 @@ nav{
 
 .navbar-brand,.nav-link{
     color: var(--color-baby-powder);
+    font-size: 1.5rem !important;
 }
+
 
 .icono-logo{
     margin-left: 0.5rem;
@@ -32,23 +36,21 @@ nav{
 }
 
 
-/*El icono del carrito*/
-.contenedor-carrito{
-    position: relative;
-    padding: 1.25rem;    
+.navbar-toggler-icon{
+    background-color:var(--color-baby-powder) !important;
 }
 
-.contenedor-carrito i{
+.icono-carrito{
     font-size: 1.75rem;
-
+    padding: 0.75rem;
+    /*position:relative*/
 }
 
 .numero-carrito{
-    position: absolute;
+    /* position: absolute;
     top: -6px;
     right: 0px;
-    font-size: 1.25rem;
-    
+    font-size: 1.25rem; */
     color: var(--color-rose);
 }
 
