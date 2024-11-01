@@ -58,11 +58,9 @@ h2{
 }
 
 .resenha-tarjeta{
-
-    padding: 0.5rem;
-
-    /*debug*/
-    border: 1px solid salmon;
+    padding: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.75rem;
 }
 
 .resenha-tarjeta__superior{
@@ -77,6 +75,12 @@ h2{
     border-radius: 50%;
 }
 
+.link-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.25rem 0;
+}
 
 
 
