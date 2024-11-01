@@ -1,3 +1,11 @@
+
+h2{
+    text-align: center;
+    margin: 1.75rem 0;
+}
+
+
+
 /* La sección hero con el video */
 
 .hero-video{
@@ -70,6 +78,14 @@
 }
 
 
+/* Estilos del mapa en el iframe*/
+.ubicacion-contenedor-mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 /* MEDIA QUERIES */
 /* ____________________________________________ */
@@ -91,6 +107,12 @@
         font-size: 2.75rem; 
     }
 
+
+    .resenhas-contenedor{
+        grid-template-columns: 1fr;
+        
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -103,5 +125,10 @@
 
     .hero-video-overlay h1{
         font-size: 3.25rem; 
+    }
+
+    .resenhas-contenedor{
+        grid-template-columns: repeat(2,1fr);
+        
     }
 }
