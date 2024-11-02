@@ -1,6 +1,9 @@
 /* Estilods de carrito.html */
 /* ____________________________________________________________________________________*/
 
+p{
+    font-size: 1.75rem;
+}
 
 
 .seccion-productos h2{
@@ -47,4 +50,15 @@
 
 .producto-carrito__eliminar{
     background-color: var(--color-bittersweet);
+}
+
+
+
+/*MEDIA QUERIES */
+/*_______________________________________________*/
+
+@media screen and (max-width: 576px) {
+    .producto-carrito{
+        flex-direction: column;
+    }
 }
