@@ -71,9 +71,6 @@ ul{
 .contenedor-principal{
     max-width: 1320px;
     margin: 0 auto;
-
-    /*debug*/
-    border: 1px solid goldenrod;
 }
 
 .cta-btn{
