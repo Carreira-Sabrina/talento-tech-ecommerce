@@ -82,8 +82,8 @@
         flex-direction: column;
     }
 
-     /*Iframe con mapa*/
-     #iframe-mapa{
+    /*Iframe con mapa*/
+    #iframe-mapa{
         width:90%;
     }
 }
