@@ -14,8 +14,9 @@ En la próxima entrega se cargará contenido dinámicamente mediante la utilizac
 - Los íconos pertenecen a [Fontawesome](https://fontawesome.com/)
 - La barra de navegación utiliza [Bootstrap](https://getbootstrap.com/)
 
+---
 
-
+[ Demo en Github-Pages](https://carreira-sabrina.github.io/talento-tech-ecommerce/)
 
 
 ---
