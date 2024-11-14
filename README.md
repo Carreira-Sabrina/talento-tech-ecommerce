@@ -1,8 +1,12 @@
-# Pre-Entrega de Proyecto 
+# Pre-Entrega de Proyecto para Talento Tech Front-JS 2024
+
+### Tipo de proyecto: Sitio de ecommerce
 
 En esta etapa del proyecto se utiliza **HTML, CSS** y **Bootstrap**
 
-Por el momento, el contenido mostrado en la página es estático
+Por el momento, el contenido mostrado en la página es estático.
+
+
 
 En la próxima entrega se cargará contenido dinámicamente mediante la utilización de **Javascript**
 
