@@ -16,4 +16,4 @@ En la próxima entrega se cargará contenido dinámicamente mediante la utilizac
 Agradecimiento a los artistas que generosamente ofrecen su contenido para hacer posible este trabajo
 
 
-[Vídeo de Kampus Production:] (https://www.pexels.com/es-es/video/hombre-gente-mujer-telefono-inteligente-6715779/)
+[ Vídeo de Kampus Production ](https://www.pexels.com/es-es/video/hombre-gente-mujer-telefono-inteligente-6715779/)
