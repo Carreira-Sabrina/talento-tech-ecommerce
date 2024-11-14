@@ -28,16 +28,8 @@ p{
     object-fit: contain;
 }
 
-.producto-carrito__nombre{
-    align-items: center;
-    
-}
 
-.producto-carrito__precio p{
-    text-align: center;
-}
-
-.producto-carrito__cantidad{
+.producto-carrito__nombre, .producto-carrito__precio, .producto-carrito__cantidad, .producto-carrito__subtotal{
     text-align: center;
 }
 
@@ -67,7 +59,7 @@ p{
     }
 }
 
-/* a los 577px se rompe un poquito el display de los botones de + y -*/
+
 @media screen and (min-width: 577px) and (max-width:768px) {
     .producto-carrito__aumentar-cantidad, .producto-carrito__descontar-cantidad,.producto-carrito__eliminar{
         font-size: 1.25rem;
