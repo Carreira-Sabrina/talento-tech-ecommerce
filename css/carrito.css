@@ -2,7 +2,7 @@
 /* ____________________________________________________________________________________*/
 
 p{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 
@@ -33,6 +33,10 @@ p{
     
 }
 
+.producto-carrito__precio p{
+    text-align: center;
+}
+
 .producto-carrito__cantidad{
     text-align: center;
 }
@@ -60,5 +64,19 @@ p{
 @media screen and (max-width: 576px) {
     .producto-carrito{
         flex-direction: column;
+    }
+}
+
+/* a los 577px se rompe un poquito el display de los botones de + y -*/
+@media screen and (min-width: 577px) and (max-width:768px) {
+    .producto-carrito__aumentar-cantidad, .producto-carrito__descontar-cantidad,.producto-carrito__eliminar{
+        font-size: 1.25rem;
+        padding: 10px;
+        border-radius: 8px;
+        color: var(--color-baby-powder)
+    }
+
+    .producto-carrito__nombre .producto-carrito__cantidad, .producto-carrito__subtotal,.producto-carrito__precio{
+        font-size: 0.75rem;
     }
 }

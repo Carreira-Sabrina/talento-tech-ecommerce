@@ -31,3 +31,17 @@
 .footer-contenido i{
     font-size: 2rem;
 }
+
+
+/* MEDIA QUERIES */
+/* ____________________________________________ */
+
+@media screen and (max-width: 767px){
+    #footer{
+        flex-direction: column;
+    }
+
+    .footer-contenido p{
+        text-align: center;
+    }
+}
