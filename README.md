@@ -20,7 +20,7 @@ En la próxima entrega se cargará contenido dinámicamente mediante la utilizac
 
 [ Foto de Nataliya Vaitkevich en Pexels ](https://www.pexels.com/es-es/foto/ordenador-portatil-sentado-compras-en-linea-compras-online-6214129/)
 
-[ Foto de JESHOOTS.COM en Unsplash](https://unsplash.com/es/fotos/an-open-empty-notebook-on-a-white-desk-next-to-an-iphone-and-a-macbook-pUAM5hPaCRI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+[ Foto de JESHOOTS.COM en Unsplash ](https://unsplash.com/es/fotos/an-open-empty-notebook-on-a-white-desk-next-to-an-iphone-and-a-macbook-pUAM5hPaCRI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 
 
       
