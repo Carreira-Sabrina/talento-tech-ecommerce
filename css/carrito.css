@@ -1,9 +1,10 @@
-/* Estilods de carrito.html */
+/* Estilos de carrito.html */
 /* ____________________________________________________________________________________*/
 
 p{
     font-size: 1.5rem;
 }
+
 
 
 .seccion-productos h2{
@@ -12,6 +13,7 @@ p{
 
 /*El article*/
 .producto-carrito{
+    margin: 0 auto;
     display: flex;
     margin-bottom: 1rem;
     align-items: center;
@@ -53,22 +55,9 @@ p{
 /*MEDIA QUERIES */
 /*_______________________________________________*/
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .producto-carrito{
         flex-direction: column;
-    }
-}
-
-
-@media screen and (min-width: 577px) and (max-width:768px) {
-    .producto-carrito__aumentar-cantidad, .producto-carrito__descontar-cantidad,.producto-carrito__eliminar{
-        font-size: 1.25rem;
-        padding: 10px;
-        border-radius: 8px;
-        color: var(--color-baby-powder)
-    }
-
-    .producto-carrito__nombre .producto-carrito__cantidad, .producto-carrito__subtotal,.producto-carrito__precio{
-        font-size: 0.75rem;
+        max-width: 75%;
     }
 }
