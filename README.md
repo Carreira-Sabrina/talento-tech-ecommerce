@@ -6,6 +6,9 @@ Por el momento, el contenido mostrado en la página es estático
 
 En la próxima entrega se cargará contenido dinámicamente mediante la utilización de **Javascript**
 
+- Las fuentes utilizadas pertenecen a [Google Fonts](https://fonts.google.com/)
+- Los íconos pertenecen a [Fontawesome](https://fontawesome.com/)
+- La barra de navegación utiliza [Bootstrap](https://getbootstrap.com/)
 
 
 
@@ -22,5 +25,4 @@ En la próxima entrega se cargará contenido dinámicamente mediante la utilizac
 
 [ Foto de JESHOOTS.COM en Unsplash ](https://unsplash.com/es/fotos/an-open-empty-notebook-on-a-white-desk-next-to-an-iphone-and-a-macbook-pUAM5hPaCRI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 
-
-      
+[Imágenes de la API Fake Store API](https://fakestoreapi.com/)
